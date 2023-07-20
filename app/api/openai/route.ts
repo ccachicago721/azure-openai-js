@@ -35,7 +35,7 @@ const mapStyle = (style: ConverSationStyle) => {
 const simpleOpenAIRequest = async (payload: IChatGPTPayload) => {
   // create a new configuration object with the base path set to the Azure OpenAI endpoint
   const configuration = new Configuration({
-    basePath: process.env.AZURE_OPEN_AI_BASE, //https://YOUR_AZURE_OPENAI_NAME.openai.azure.com/openai/deployments/YOUR_AZURE_OPENAI_DEPLOYMENT_NAME
+    basePath: 'https://ccopenairesource.openai.azure.com/openai/deployments/CCGPTModel', //https://YOUR_AZURE_OPENAI_NAME.openai.azure.com/openai/deployments/YOUR_AZURE_OPENAI_DEPLOYMENT_NAME
   });
 
   const openai = new OpenAIApi(configuration);
