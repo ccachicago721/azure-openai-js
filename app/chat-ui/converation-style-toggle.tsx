@@ -73,5 +73,5 @@ export const ToggleItem: FC<ToggleItemProps> = (props) => {
     </li>
   );
 };
-export { ConverSationStyle };
+export type { ConverSationStyle };
 
