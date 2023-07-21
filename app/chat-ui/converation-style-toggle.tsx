@@ -7,7 +7,7 @@ interface ToggleProps {
 }
 
 export const ConversationStyleToggle: FC<ToggleProps> = (props) => {
-  const [selected, setSelected] = useState<ConverSationStyle>("FUNNY");
+  const [selected, setSelected] = useState<ConverSationStyle>("GENERAL");
 
   const onClick = (style: ConverSationStyle) => {
     setSelected(style);
@@ -18,32 +18,32 @@ export const ConversationStyleToggle: FC<ToggleProps> = (props) => {
     <div className="bg-slate-900 rounded-full p-1">
       <ul className="flex justify-between gap-1 text-sm items-stretch">
         <ToggleItem
-          title="Funny"
-          isSelected={selected === "FUNNY"}
-          onClick={() => onClick("FUNNY")}
+          title="General"
+          isSelected={selected === "GENERAL"}
+          onClick={() => onClick("GENERAL")}
         >
-          🤣
+          ⭐
         </ToggleItem>
         <ToggleItem
-          title="Neutral"
-          isSelected={selected === "NEUTRAL"}
-          onClick={() => onClick("NEUTRAL")}
+          title="Housing"
+          isSelected={selected === "HOUSING"}
+          onClick={() => onClick("HOUSING")}
         >
-          😐
+          🏠
         </ToggleItem>
         <ToggleItem
-          title="Sad"
-          isSelected={selected === "SAD"}
-          onClick={() => onClick("SAD")}
+          title="Children, Youth & Families"
+          isSelected={selected === "CHILDREN_YOUTH_FAMILIES"}
+          onClick={() => onClick("CHILDREN_YOUTH_FAMILIES")}
         >
-          😔
+          🍼
         </ToggleItem>
         <ToggleItem
-          title="Angry"
-          isSelected={selected === "ANGRY"}
-          onClick={() => onClick("ANGRY")}
+          title="Senior Servies"
+          isSelected={selected === "SENIOR_SERVICES"}
+          onClick={() => onClick("SENIOR_SERVICES")}
         >
-          🤬
+          🤝
         </ToggleItem>
       </ul>
     </div>
@@ -73,3 +73,5 @@ export const ToggleItem: FC<ToggleItemProps> = (props) => {
     </li>
   );
 };
+export { ConverSationStyle };
+

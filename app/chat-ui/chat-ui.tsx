@@ -9,7 +9,7 @@ import { Header } from "./header";
 import { PromptInput } from "./prompt-input";
 
 export const ChatUI = () => {
-  const [style, setStyle] = useState<ConverSationStyle>("FUNNY");
+  const [style, setStyle] = useState<ConverSationStyle>("GENERAL");
   const [response, setResponse] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
