@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-    <header className="sticky top-0 bg-blue-500 py-4 ">
+    <header className="sticky top-0 bg-red-500 py-4 ">
       <div className="flex justify-center container mx-auto px-4">
         <Link href="/">
           <div className="text-white text-xl font-bold">Mock CC Website</div>
@@ -19,7 +19,7 @@ export default function Home() {
     <div
       className={`min-h-screen bg-slate-100 flex items-center place-content-center overflow-hidden ${inter.className}`}
     >
-      <ChatbotWidget />
+      {/* <ChatbotWidget /> */}
     </div>
     </>
   );
